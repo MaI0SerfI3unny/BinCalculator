@@ -1,12 +1,57 @@
-from Type import bin
-from Type import oct
-from Type import hex
-
 quess = int(input("Выбери операцию:"
                   "\n1. Перевести простое число, число в двоичную"
                   "\n2. Перевести простое число, число в шестнадцатиричную"
                   "\n3. Перевести простое число, число в восьмиричную"
                   "\n4. Дополнительно"))
+
+def binplus(bin_one, bin_two):
+    result = (bin(bin_one + bin_two))
+    print(result)
+
+def binmin(bin_one, bin_two):
+    result = (bin(bin_one - bin_two))
+    print(result)
+
+def binmn(bin_one, bin_two):
+    result = (bin(bin_one * bin_two))
+    print(result)
+
+def bindl(bin_one, bin_two):
+    result = (bin(bin_one / bin_two))
+    print(result)
+
+def octplus(oct_one, oct_two):
+    result = (oct(oct_one + oct_two))
+    print(result)
+
+def octmin(oct_one, oct_two):
+    result = (oct(oct_one - oct_two))
+    print(result)
+
+def octmn(oct_one, oct_two):
+    result = (oct(oct_one * oct_two))
+    print(result)
+
+def octdl(oct_one, oct_two):
+    result = (oct(oct_one / oct_two))
+    print(result)
+
+def hexplus(hex_one,hex_two):
+    result = (hex(hex_one + hex_two))
+    print(result)
+
+def hexmin(hex_one,hex_two):
+    result = (hex(hex_one - hex_two))
+    print(result)
+
+def hexmn(hex_one,hex_two):
+    result = (hex(hex_one * hex_two))
+    print(result)
+
+def hexdl(hex_one,hex_two):
+    result = (hex(hex_one / hex_two))
+    print(result)
+
 
 def sort_bin():
     e = int(input("Сколько чисел нужно отсортировать?"))
@@ -46,54 +91,54 @@ def advance():
    if add == 1:
       num1 = int(input("Введите первое число: "))
       num2 = int(input("Введите второе число: "))
-      bin.binplus(num1, num2)
+      binplus(num1, num2)
    if add == 2:
        num1 = int(input("Введите первое число: "))
        num2 = int(input("Введите второе число: "))
-       oct.octplus(num1, num2)
+       octplus(num1, num2)
 
    if add == 3:
        num1 = int(input("Введите первое число: "))
        num2 = int(input("Введите второе число: "))
-       hex.hexplus(num1, num2)
+       hexplus(num1, num2)
    if add == 4:
        num1 = int(input("Введите первое число: "))
        num2 = int(input("Введите второе число: "))
-       bin.binmin(num1, num2)
+       binmin(num1, num2)
    if add == 5:
        num1 = int(input("Введите первое число: "))
        num2 = int(input("Введите второе число: "))
-       oct.octmin(num1,num2)
+       octmin(num1,num2)
    if add == 6:
        num1 = int(input("Введите первое число: "))
        num2 = int(input("Введите второе число: "))
-       hex.hexmin(num1,num2)
+       hexmin(num1,num2)
    if add == 7:
        sort_bin()
    if add == 8:
        num1 = int(input("Введите первое число: "))
        num2 = int(input("Введите второе число: "))
-       bin.binmn(num1, num2)
+       binmn(num1, num2)
    if add == 9:
        num1 = int(input("Введите первое число: "))
        num2 = int(input("Введите второе число: "))
-       oct.octmn(num1,num2)
+       octmn(num1,num2)
    if add == 10:
        num1 = int(input("Введите первое число: "))
        num2 = int(input("Введите второе число: "))
-       hex.hexmn(num1,num2)
+       hexmn(num1,num2)
    if add == 11:
        num1 = int(input("Введите первое число: "))
        num2 = int(input("Введите второе число: "))
-       bin.bindl(num1, num2)
+       bindl(num1, num2)
    if add == 12:
        num1 = int(input("Введите первое число: "))
        num2 = int(input("Введите второе число: "))
-       oct.octdl(num1,num2)
+       octdl(num1,num2)
    if add == 13:
        num1 = int(input("Введите первое число: "))
        num2 = int(input("Введите второе число: "))
-       hex.hexdl(num1,num2)
+       hexdl(num1,num2)
 
 def binary():
     n = int(input('Введи число которое нужно перевести в двоичную'))
