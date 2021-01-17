@@ -9,7 +9,7 @@ This calculator help you work with:<br>
 
 ### Functions
 * Plus, Minus, Multiply, Divide all type code.
-* Enter multiple values so you can sort the numbers.
+* Enter multiple values so you can convert multiple the numbers.
 * Convert an ordinary number to a code number.
 
 Attantion:<br>
